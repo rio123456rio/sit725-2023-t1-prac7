@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>SIT725 T3 Prac7</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<nav>
+			<div class="nav-wrapper navbar-size">
+				<a href="#" class="brand-logo"><img class="user-image-size" src="images/user-image.png"></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a target="_blank" href="https://go.foodsafety.com.au/food-safety-supervisor?mcl_campaign=AFS-B2C-22A-C2E-002&utm_term=food%20certification%20australia&utm_campaign=AFS-B2C-22A-C2E-002_GAW-Search-Generic-VIC&utm_source=adwords&utm_medium=ppc&hsa_acc=4013394255&hsa_cam=18802689312&hsa_grp=143905415660&hsa_ad=632657892120&hsa_src=g&hsa_tgt=kwd-338058462137&hsa_kw=food%20certification%20australia&hsa_mt=b&hsa_net=adwords&hsa_ver=3&region=vic&gad_source=1&gclid=CjwKCAiAg9urBhB_EiwAgw88mQRTL4O_YGpFGU3wEEskcQbKgKQGRamyfVQZIgbUpRmksvwyrgjiSBoCP7wQAvD_BwE">Australia Food Safety</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<main class="main-body">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 center-align">
+						<h1 id="heading">Welcome to Receipe World</h1>
+						<p class="flow-text">This is a webpage which gives you simple receipes</p>
+					</div>
+					<div class="col s12 center-align">
+						<img class="materialboxed materialboxed-image" src="images/receipe.jpg">
+					</div>
+					<div class="col s12 center-align">
+						<a class="waves-effect waves-light btn add-receipe-button modal-trigger" id="addReceipeButton" data-target="modal1"><i class="material-icons left">auto_fix_high</i>Add Receipe</a>
+					</div>
+				</div>
+				<div class="row" id="card-section">
+				</div>
+			</div>
+
+			<div id="modal1" class="modal modal-fixed-footer">
+				<div class="row modal-content">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s6">
+								<input id="title" type="text">
+								<label for="title">title</label>
+							</div>
+							<div class="input-field col s6">
+								<input id="path" type="text">
+								<label for="path">path</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="subTitle" type="text">
+								<label for="subTitle">subTitle</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="description" type="text">
+								<label for="description">description</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12 center-align">
+								<a class="waves-effect waves-light btn" id="formSubmit">submit</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="scripts.js"></script>
+	</body>
+</html>
